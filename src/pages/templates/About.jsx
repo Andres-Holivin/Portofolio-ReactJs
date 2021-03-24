@@ -1,5 +1,4 @@
 import Me from '../../assets/images/profile.jpg';
-import BackGround from '../../assets/images/pexels-fauxels-3184460.jpg';
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
 import './About.css';
 const Home =()=>{
@@ -25,7 +24,7 @@ const Home =()=>{
     }
     return(
         <>
-            <div style={{backgroundImage :`url(${BackGround})`}} className="w-screen h-screen bg-cover screen backgroundImage"></div>
+            <div className="w-screen h-screen bg-cover screen backgroundImage bg-about-background"></div>
             <div className="grid h-full grid-cols-6 grid-rows-6 bg-cover mainPage">
                 <div className="col-span-6">
                     <div className="grid h-full grid-cols-6 grid-rows-6">

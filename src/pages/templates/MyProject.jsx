@@ -18,7 +18,7 @@ const MyProject = () =>{
                     <div className="flex items-center">
                         <button onClick={()=>scroll(-30)} className="m-2 transition ease-out transform cursor-pointer focus:outline-none hover:scale-125"><FontAwesomeIcon size="3x" icon={['fas', 'chevron-circle-left']} /></button>
                     </div>
-                    <div ref={ref} style={{scrollbarWidth:'none'}}className="flex max-w-full py-8 overflow-auto whitespace-nowrap over"> 
+                    <div ref={ref} style={{scrollbarWidth:'none'}} className="flex max-w-full py-8 overflow-auto whitespace-nowrap over"> 
                         <Cart/>
                         <Cart/>
                         <Cart/>

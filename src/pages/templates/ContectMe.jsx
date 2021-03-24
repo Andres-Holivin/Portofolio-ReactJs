@@ -50,7 +50,7 @@ const ContectMe = () =>{
                         <b className="m-2 text-3xl">Contact Me</b>
                         <p className="m-2 text-2xl text-center">You can send a message or send input to me via the form below.</p>
                     </div>   
-                    <form className="w-full" onSubmit={e=>ContectMe(e)}>
+                    <form className="w-full" onSubmit={e=>ContectMe(e)} autoComplete="off">
                         <div style={{gridTemplateRows:'auto auto auto'}} className="grid grid-rows-3 p-3 my-4 bg-gray-200 border-4 rounded-xl mx-60 ">
                             <div className="grid grid-cols-2">
                                 <div className="w-full p-4">
