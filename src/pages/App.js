@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import './App.css';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
@@ -14,11 +14,12 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(fab, far, fas);
 
 function App() {
+  const [sideBar,setSideBar]=useState(true);
   return (    
     <Router>
        <div >  
         <div className="flex-col w-screen h-screen md:flex md:flex-row md:min-h-screen">
-          <Nav/>          
+          <Nav show={{sideBar}} click={()=>setSideBar(!sideBar)}/>
           <div className="w-full h-full">
             <Switch>
               {navBarValue? 

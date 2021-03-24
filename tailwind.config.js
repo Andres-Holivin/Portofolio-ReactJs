@@ -7,6 +7,10 @@ module.exports = {
         'about-background': "url('/src/assets/images/pexels-fauxels-3184460.jpg')"
        })
     },
+    zIndex:{
+      '-10':'-10',
+      '-20':'-20'
+    }
   },
   variants: {
     extend: {},

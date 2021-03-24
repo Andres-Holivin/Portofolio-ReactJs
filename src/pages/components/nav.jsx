@@ -1,23 +1,21 @@
 import React, { useState } from 'react';
 import bg from '../../assets/images/profile.jpg';
 import NavBar from "./navBar";
-// import DropDownNavBar from "./dropDownNavBar";
-// import firebase from "../../config/firebase/firebase";
 import navBarValue from "../../configs/navBarValue";
 import { FontAwesomeIcon } from '@fortawesome/react-fontawesome'
-const Nav=()=>{
-  const [sideBar,SetSideBar]=useState(true);
-  const showBar =()=>{SetSideBar(false);console.log(sideBar)};
-  const hideBar =()=>{SetSideBar(true);console.log(sideBar)};
+const Nav=(props)=>{
+  // const [sideBar,SetSideBar]=useState(true);
+  // const showBar =()=>{props.click;console.log(props.show)};
+  const hideBar =()=>{props.click;console.log(props.show)};
   const About ={
     href:"/"
   }
   return (
-    <div className="absolute z-40">
-      <div onClick={showBar} className="p-2 px-4 m-2 bg-gray-200 rounded-lg cursor-pointer md:fixed max-w-min">
+    <div className="absolute z-10">
+      <div onClick={props.show} className="p-2 px-4 m-2 bg-gray-200 rounded-lg cursor-pointer md:fixed max-w-min">
           <FontAwesomeIcon size="2x" icon={['fas', 'bars']} />
       </div>
-      <div className={`${!sideBar?"left-0 duration-300":"-left-full duration-100"} flex md:fixed flex-col top-0 text-gray-700 h-full w-60 from-blue-100 to-blue-500 bg-gradient-to-b`} >
+      <div className={`${!props.show?"w-60":" w-0"} left-0 overflow-x-hidden flex fixed flex-col top-0 text-gray-700 h-full from-blue-100 to-blue-500 bg-gradient-to-b`} >
         <div className="flex justify-end m-2 ">
           <div onClick={hideBar} className="p-2 px-3 cursor-pointer min-w-min rounded-xl">
             <FontAwesomeIcon size="2x" icon={['fas', 'times']} />
