@@ -23,7 +23,7 @@ function App() {
        <div >  
         <div className="flex flex-col w-full md:flex md:flex-row md:min-h-screen">
           <Nav onClick={sideBarTools} show={sideBar}/>
-          <div className="w-full h-full">
+          <div className={`${sideBar===true?"m-64":"m-0"} w-full h-full`}>
             <Switch>
               {navBarValue? 
                 navBarValue.map((data,id)=>
