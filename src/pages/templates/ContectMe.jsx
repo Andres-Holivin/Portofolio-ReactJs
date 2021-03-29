@@ -45,7 +45,7 @@ const ContectMe = () =>{
             <PopUp visible={popUpLoding} type="loding"/>
             <PopUp visible={PopUpText} click={()=>setPopUpText(!PopUpText)} type="announcement" text="This message will be sent to my Email. Thanks for the message."/>
             <div className="flex w-full min-h-screen from-gray-400 via-white to-gray-400 bg-gradient-to-b">
-                <div className="flex flex-col items-center w-full ">
+                <div className="flex flex-col items-center w-full">
                     <div className="flex flex-col items-center p-11">
                         <b className="m-2 text-3xl">Contact Me</b>
                         <p className="m-2 text-2xl text-center">You can send a message or send input to me via the form below.</p>

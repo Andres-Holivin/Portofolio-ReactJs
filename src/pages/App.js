@@ -1,5 +1,4 @@
 import React from 'react';
-import './App.css';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 import Nav from "./components/nav";
@@ -17,9 +16,9 @@ function App() {
   return (    
     <Router>
        <div >  
-        <div className="flex-col w-screen h-screen md:flex md:flex-row md:min-h-screen">
+        <div className="flex flex-col w-full md:flex md:flex-row md:min-h-screen">
           <Nav/>          
-          <div className="w-full h-full">
+          <div className="w-full">
             <Switch>
               {navBarValue? 
                 navBarValue.map((data,id)=>
