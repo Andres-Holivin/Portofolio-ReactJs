@@ -1,4 +1,4 @@
-import React from 'react';
+import React, { useState } from 'react';
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 import Nav from "./components/nav";
@@ -14,11 +14,15 @@ library.add(fab, far, fas);
 
 function App() {
   const [sideBar,setSideBar]=useState(true);
+  const sideBarTools = () =>{
+    setSideBar(!sideBar);
+    console.log(sideBar);
+  }
   return (    
     <Router>
        <div >  
         <div className="flex flex-col w-full md:flex md:flex-row md:min-h-screen">
-          <Nav show={{sideBar}} click={()=>setSideBar(!sideBar)}/>
+          <Nav onClick={sideBarTools} show={sideBar}/>
           <div className="w-full h-full">
             <Switch>
               {navBarValue? 

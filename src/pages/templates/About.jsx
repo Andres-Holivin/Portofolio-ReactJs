@@ -24,8 +24,8 @@ const Home =()=>{
     }
     return(
         <>
-            <div style={{filter:"blur(3px)"}} className="absolute w-screen h-screen bg-cover screen z--10 bg-about-background"></div>
-            <div className="grid h-full grid-cols-6 grid-rows-6 bg-cover mainPage">
+            <div style={{filter:"blur(3px)"}} className="absolute w-screen h-screen bg-cover screen -z-10 bg-about-background"></div>
+            <div className="grid min-h-screen grid-cols-6 grid-rows-6 bg-cover mainPage">
                 <div className="col-span-6">
                     <div className="grid h-full grid-cols-6 grid-rows-6">
                     </div>
