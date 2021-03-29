@@ -1,9 +1,4 @@
-<<<<<<< HEAD
 import React from 'react';
-=======
-import React, { useState } from 'react';
-import './App.css';
->>>>>>> c1ba405b333d878bafb28edf213856c6c86e2d04
 import {BrowserRouter as Router,Switch,Route} from "react-router-dom";
 
 import Nav from "./components/nav";
