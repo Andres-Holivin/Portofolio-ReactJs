@@ -12,14 +12,14 @@ const navBarValue=[
         Icon:['fas','user'],
         Compenent:()=><About/>
     },
-    {
-        Path: "/config",
-        Title: "Config",
-        id: "2",
-        type: "single",
-        Icon:['fas','cog'],
-        Compenent:()=><Config/>
-    },
+    // {
+    //     Path: "/config",
+    //     Title: "Config",
+    //     id: "2",
+    //     type: "single",
+    //     Icon:['fas','cog'],
+    //     Compenent:()=><Config/>
+    // },
     {   
         Path: "/Project",
         Title: "Project",
@@ -36,13 +36,13 @@ const navBarValue=[
         Icon:['fas','comment-alt'],
         Compenent:()=><ContectMe/>
     },
-    {   
-        Path: "/testDB",
-        Title: "Test DB",
-        Id: "4",
-        Type: "single",
-        Icon:['fas','database'],
-        Compenent:()=><TestFirebaseDB/>
-    },
+    // {   
+    //     Path: "/testDB",
+    //     Title: "Test DB",
+    //     Id: "4",
+    //     Type: "single",
+    //     Icon:['fas','database'],
+    //     Compenent:()=><TestFirebaseDB/>
+    // },
 ];
 export default navBarValue;

@@ -13,7 +13,7 @@ import { library } from '@fortawesome/fontawesome-svg-core';
 library.add(fab, far, fas);
 
 function App() {
-  const [sideBar,setSideBar]=useState(true);
+  const [sideBar,setSideBar]=useState(false);
   const sideBarTools = () =>{
     setSideBar(!sideBar);
     console.log(sideBar);
@@ -23,7 +23,7 @@ function App() {
        <div >  
         <div className="flex flex-col w-full md:flex md:flex-row md:min-h-screen">
           <Nav onClick={sideBarTools} show={sideBar}/>
-          <div className={`${sideBar===true?"m-64":"m-0"} w-full h-full`}>
+          <div className={`${sideBar===true?"pt-72 md:pt-0 md:pl-64 duration-700":"p-0 duration-700"} w-screen h-full`}>
             <Switch>
               {navBarValue? 
                 navBarValue.map((data,id)=>
