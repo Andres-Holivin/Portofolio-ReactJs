@@ -21,10 +21,6 @@ const MyProject = () =>{
                 <div className="flex w-full ">
                     <div ref={ref} className="flex max-w-full py-4 mx-2 overflow-hidden "> 
                         <Cart/>
-                        <Cart/>
-                        <Cart/>
-                        <Cart/>
-                        <Cart/>
                     </div>
                 </div>   
                 <div className="flex">
